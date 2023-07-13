@@ -85,7 +85,7 @@
       <div class="collapse navbar-collapse w-auto" id="sidenav-collapse-main">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="pages/dashboard.html">
+            <a class="nav-link active" href="/dashboard.html">
               <div
                 class="fas fa-car" style="color: #f28e02"> &nbsp;
               </div>

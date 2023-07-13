@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id');
-            $table->foreignId('car_id');
+            $table->foreignId('cars_id');
             $table->date('booking_time');
             $table->date('return_time');
             $table->timestamps();
