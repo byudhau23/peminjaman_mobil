@@ -97,7 +97,7 @@
       <div class="collapse navbar-collapse w-auto" id="sidenav-collapse-main">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="pages/dashboard.html">
+            <a class="nav-link active" href="/bookings">
               <div
                 class="fa fa-book" style="color: #f28e02"> &nbsp;
               </div>

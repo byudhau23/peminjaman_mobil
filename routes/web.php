@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\dashboard_controller;
+use App\Http\Controllers\BookingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// nampilin dashboard admin
+// Menampilkan Dashboard Admin
 Route::get('/', [dashboard_controller::class, 'index']);
+
+// Menampilkan Daftar Booking
+Route::get('/bookings', [BookingController::class, 'index']);
