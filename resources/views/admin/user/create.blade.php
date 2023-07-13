@@ -1,9 +1,9 @@
 @extends('main')
 @section('content')
     <div class="container">
-        <h1 class="text-center">Tambah Pasien</h1>
+        <h1 class="text-center">Tambah User</h1>
         <br>
-        <a href="/pasien" class="btn btn-primary">
+        <a href="/user" class="btn btn-primary">
             Back</a>
         <hr>
 
@@ -18,11 +18,12 @@
             </div>
         @endif
 
-        <form action="/pasien" method="post" class="mx-2">
+        <form action="/user" method="post" class="mx-2">
             <div class="form-group mt-3">
                 @csrf
                 <label for="nama">Nama</label>
-                <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama Pasien" value="{{ old('nama') }}">
+                <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama User"
+                    value="{{ old('nama') }}">
             </div>
 
             <div class="form-group mt-3">
@@ -45,7 +46,8 @@
 
             <div class="form-group mt-3">
                 <label for="telp">No. Telp</label>
-                <input type="text" class="form-control" name="telp" placeholder="Masukkan No. Telp" value="{{ old('telp') }}">
+                <input type="text" class="form-control" name="telp" placeholder="Masukkan No. Telp"
+                    value="{{ old('telp') }}">
             </div>
 
             <div class="form-group mt-3 d-flex justify-content-center">

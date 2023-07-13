@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\dashboard_controller;
+use App\Http\Controllers\user_controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 // nampilin dashboard admin
 Route::get('/', [dashboard_controller::class, 'index']);
+
+//nampilin user
+Route::get('/user', [user_controller::class, 'index']);

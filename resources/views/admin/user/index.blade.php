@@ -1,9 +1,9 @@
 @extends('main')
 @section('content')
     <div class="container">
-        <h1>Daftar Pasien</h1>
+        <h1>Daftar User </h1>
         <br>
-        <a href="/pasien/create" class="btn btn-primary">+ Tambah Pasien</a>
+        <a href="/user/create" class="btn btn-primary">+ Tambah User</a>
         <hr>
 
         @if (session('success'))
@@ -26,12 +26,12 @@
             </thead>
             <tbody>
                 @php $iteration = 1 @endphp
-                @foreach ($pasiens as $item)
+                @foreach ($user as $item)
                     <tr>
                         <td>{{ $iteration++ }}</td>
                         <td>{{ $item['nama'] }}</td>
                         <td>
-                            @if($item['jk'] == 'l')
+                            @if ($item['jk'] == 'l')
                                 Laki-Laki
                             @else
                                 Perempuan
@@ -41,8 +41,8 @@
                         <td>{{ $item['alamat'] }}</td>
                         <td>{{ $item['telp'] }}</td>
                         <td>
-                            <a href="/pasien/edit/{{ $item->id }}" class="btn btn-warning btn-sm">Edit</a>
-                            <form action="/pasien" method="POST" class="d-inline">
+                            <a href="/user/edit/{{ $item->id }}" class="btn btn-warning btn-sm">Edit</a>
+                            <form action="/user" method="POST" class="d-inline">
                                 @csrf
                                 @method('delete')
                                 <input type="hidden" name="id" value="{{ $item->id }}">
