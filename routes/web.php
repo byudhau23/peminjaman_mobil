@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\car_controller;
 use App\Http\Controllers\dashboard_controller;
 use Illuminate\Support\Facades\Route;
 
@@ -16,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 // nampilin dashboard admin
 Route::get('/', [dashboard_controller::class, 'index']);
+
+// Mobil
+// nampilin halaman mobil
+Route::get('/car', [car_controller::class, 'index']);
