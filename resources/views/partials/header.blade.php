@@ -56,7 +56,7 @@ class="main-content position-relative max-height-vh-100 h-100 border-radius-lg"
             class="nav-link text-body font-weight-bold px-0"
           >
             <i class="fa fa-user me-sm-1"></i>
-            <span class="d-sm-inline d-none">Sign In</span>
+            <span class="d-sm-inline d-none">Sign Out</span>
           </a>
         </li>
         <li class="nav-item d-xl-none ps-3 d-flex align-items-center">

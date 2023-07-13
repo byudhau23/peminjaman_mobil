@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\car_controller;
 use App\Http\Controllers\dashboard_controller;
+use App\Http\Controllers\BookingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,9 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// nampilin dashboard admin
+// Menampilkan Dashboard Admin
 Route::get('/', [dashboard_controller::class, 'index']);
 
 // Mobil
 // nampilin halaman mobil
 Route::get('/car', [car_controller::class, 'index']);
+
+// Menampilkan Daftar Booking
+Route::get('/bookings', [BookingController::class, 'index']);
