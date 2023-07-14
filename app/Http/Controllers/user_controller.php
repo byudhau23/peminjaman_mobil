@@ -25,14 +25,14 @@ class user_controller extends Controller
     public function store(Request $request){
         // Melakukan validasi data form
         $request->validate([
-            'nama' => 'required | string',
+            'name' => 'required | string',
             'email' => 'required | unique:users,email',
         ]);
 
 
        //Insert data ke table user
        User::create([
-            'name' => $request->nama,
+            'name' => $request->name,
             'email' => $request->email,
             'password' => bcrypt($request->password),
        ]);
@@ -52,7 +52,7 @@ class user_controller extends Controller
     public function update($id, Request $request){
         // Melakukan validasi data form
         $validatedData = $request->validate([
-            'nama' => 'required | string',
+            'name' => 'required | string',
             'email' => 'required',
         ]);
 

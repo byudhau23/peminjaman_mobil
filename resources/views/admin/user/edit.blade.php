@@ -22,8 +22,8 @@
             @method('PUT')
             <div class="form-group mt-3">
                 @csrf
-                <label for="nama">Nama</label>
-                <input type="string" class="form-control" name="nama" placeholder="Masukkan Nama User"
+                <label for="name">Nama</label>
+                <input type="string" class="form-control" name="name" placeholder="Masukkan Nama User"
                     value="{{ $user->nama }}">
             </div>
 

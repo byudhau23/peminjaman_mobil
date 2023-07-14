@@ -2,9 +2,9 @@
 
 use App\Http\Controllers\car_controller;
 use App\Http\Controllers\dashboard_controller;
-use App\Http\Controllers\user_controller;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\user_controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,7 +24,24 @@ Route::get('/login', [LoginController::class, 'index'])->name('login');
 // Menampilkan Dashboard Admin
 Route::get('/', [dashboard_controller::class, 'index']);
 
-// Mobil
+// Nampilkan halaman user
+Route::get('/user', [user_controller::class, 'index']);
+
+//Nampillin form tambah user
+Route::get('/user/create', [user_controller::class, 'create']);
+
+//Nampillin tambah user
+Route::post('/user', [user_controller::class, 'store']);
+
+//Nampillin form edit user
+Route::get('/user/edit/{id}', [user_controller::class, 'edit']);
+
+//Nampillin edit user
+Route::put('/user/{id}', [user_controller::class, 'update']);
+
+//Nampillin delete user
+Route::delete('/user', [user_controller::class, 'destroy']);
+
 // nampilin halaman mobil
 Route::get('/car', [car_controller::class, 'index']);
 
@@ -60,8 +77,5 @@ Route::put('/bookings/{id}', [BookingController::class, 'update']);
 
 // Route untuk delete Booking
 Route::delete('/bookings', [BookingController::class, 'destroy']);
-
-
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

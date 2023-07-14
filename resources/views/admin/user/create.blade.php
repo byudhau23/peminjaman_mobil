@@ -21,9 +21,9 @@
         <form action="/user" method="post" class="mx-2">
             <div class="form-group mt-3">
                 @csrf
-                <label for="nama">Nama</label>
-                <input type="string" class="form-control" name="nama" placeholder="Masukkan Nama User"
-                    value="{{ old('nama') }}">
+                <label for="name">Nama</label>
+                <input type="string" class="form-control" name="name" placeholder="Masukkan Nama User"
+                    value="{{ old('name') }}">
             </div>
 
             <div class="form-group mt-3">
