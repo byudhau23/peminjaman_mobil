@@ -27,6 +27,21 @@ Route::get('/', [dashboard_controller::class, 'index']);
 // Menampilkan halaman mobil
 Route::get('/car', [car_controller::class, 'index']);
 
+// nampilin form tambah mobil
+Route::get('/car/create', [car_controller::class, 'create']);
+
+// proses tambah mobil
+Route::post('/car', [car_controller::class, 'store']);
+
+// nampilin form edit mobil
+Route::get('/car/edit/{id}', [car_controller::class, 'edit']);
+
+// proses edit mobil
+Route::put('/car/{id}', [car_controller::class, 'update']);
+
+// delete mobil
+Route::delete('/car', [car_controller::class, 'destroy']);
+
 // Menampilkan Daftar Booking
 Route::get('/bookings', [BookingController::class, 'index']);
 

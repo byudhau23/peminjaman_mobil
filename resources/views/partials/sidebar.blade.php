@@ -11,7 +11,7 @@
       sizes="76x76"
       href="{{ asset('assets') }}/img/apple-icon.png"
     />
-    <link rel="icon" type="gif" href="assets/img/car.gif">
+    <link rel="icon" type="gif" href="{{ asset('assets') }}/img/car.gif">
       <title>
         Rental Mobil
       </title>
