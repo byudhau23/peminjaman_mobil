@@ -32,8 +32,8 @@
                     <td>{{$item['booking_time']}}</td>
                     <td>{{$item['return_time']}}</td>
                     <td>
-                        <a href="/booking/edit/{{ $item->id }}" class="btn btn-warning btn-sm">Edit</a>
-                        <form action="/booking" method="POST" class="d-inline">
+                        <a href="/bookings/edit/{{ $item->id }}" class="btn btn-warning btn-sm">Edit</a>
+                        <form action="/bookings" method="POST" class="d-inline">
                             @csrf
                             @method('delete')
                             <input type="hidden" name="id" value="{{ $item->id }}">

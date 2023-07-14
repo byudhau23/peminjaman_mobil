@@ -18,7 +18,7 @@
                 </div>
                 @endif
 
-                <form action="/bookings/{{ $booking->id }}" method="post" class="mx-2">
+                <form action="/bookings/{{ $bookings->id }}" method="post" class="mx-2">
                     @method('PUT')
                     <div class="form-group mt-3">
                         @csrf
@@ -27,18 +27,18 @@
                     </div>
 
                     <div class="form-group mt-3">
-                        <label for="car_id">Car Id</label>
-                        <input type="text" class="form-control" name="car_id" value="">
+                        <label for="cars_id">Car Id</label>
+                        <input type="text" class="form-control" name="cars_id" value="">
                     </div>
 
                     <div class="form-group mt-3">
-                        <label for="booking">Booking Time</label>
-                        <input type="date" class="form-control" name="booking" value="">
+                        <label for="booking_time">Booking Time</label>
+                        <input type="date" class="form-control" name="booking_time" value="">
                     </div>
 
                     <div class="form-group mt-3">
-                        <label for="return">Return Time</label>
-                        <input type="date" class="form-control" name="return" value="">
+                        <label for="return_time">Return Time</label>
+                        <input type="date" class="form-control" name="return_time" value="">
                     </div>
 
                     <div class="form-group mt-3 d-flex justify-content-center">

@@ -34,5 +34,37 @@ class BookingController extends Controller
             ]);
             
             return redirect('/bookings');
+        }
+        public function edit($id){
+            // Mendapatkan pasien berdasarkan id
+            $bookings = Booking::find($id);
+    
+            return view('admin.bookings.edit', [
+                'bookings' => $bookings
+            ]);
+        }
+        // Method untuk update Booking
+        public function update($id, Request $request){
+        $validatedData = $request->validate([
+            'user_id' => 'required',
+            'cars_id' => 'required',
+            'booking_time' => 'required',
+            'return_time' => 'required',
+            ]);
+            //Cari pasien yang akan di update
+            $bookings = Booking::find($id);
+            
+            // Update pasien
+            $bookings->update($validatedData);
+    
+            // Kembalikan ke halaman pasien
+            return redirect('/bookings')->with('success', 'Data booking telah ter update!');
+        }
+        //Method untuk menghapus pasien
+    public function destroy(Request $request){
+        Booking::destroy($request->id);
+
+        //kembalikan ke halaman pasien
+        return redirect('/bookings')-> with('success','Data booking telah dihapus!');
     }
 }

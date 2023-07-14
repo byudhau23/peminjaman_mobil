@@ -9,13 +9,8 @@
             <script>
               document.write(new Date().getFullYear());
             </script>
-            , made with <i class="fa fa-heart"></i> by
-            <a
-              href="https://www.creative-tim.com"
-              class="font-weight-bold"
-              target="_blank"
-              >Creative Tim</a
-            >
+            , made with <i class="fa fa-heart" style="color : #FE0000"></i> by
+            <a style="color:black"><b>Anjay Team</b></a>
             for a better web.
           </div>
         </div>
