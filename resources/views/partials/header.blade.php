@@ -101,7 +101,7 @@ class="main-content position-relative max-height-vh-100 h-100 border-radius-lg"
                 <div class="d-flex py-1">
                   <div class="my-auto">
                     <img
-                      src="../assets/img/team-2.jpg"
+                      src="{{ asset('assets') }}/img/team-2.jpg"
                       class="avatar avatar-sm me-3"
                     />
                   </div>
@@ -126,7 +126,7 @@ class="main-content position-relative max-height-vh-100 h-100 border-radius-lg"
                 <div class="d-flex py-1">
                   <div class="my-auto">
                     <img
-                      src="../assets/img/small-logos/logo-spotify.svg"
+                      src="{{ asset('assets') }}/img/small-logos/logo-spotify.svg"
                       class="avatar avatar-sm bg-gradient-dark me-3"
                     />
                   </div>

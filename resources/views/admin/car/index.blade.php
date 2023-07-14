@@ -31,7 +31,7 @@
                         <td>{{ $item['brand'] }}</td>
                         <td>{{ $item['type'] }}</td>
                         <td>{{ $item['year'] }}</td>
-                        <td>{{ $item['price'] }}</td>
+                        <td>{{ number_format($item['price']) }}</td>
                         <td>
                             <a href="/car/edit/{{ $item->id }}" class="btn btn-warning btn-sm">Edit</a>
                             <form action="/car" method="POST" class="d-inline">
