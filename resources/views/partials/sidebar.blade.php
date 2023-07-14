@@ -9,9 +9,9 @@
     <link
       rel="apple-touch-icon"
       sizes="76x76"
-      href="assets/img/apple-icon.png"
+      href="{{ asset('assets') }}/img/apple-icon.png"
     />
-    <link rel="icon" type="gif" href="assets/img/car.gif">
+    <link rel="icon" type="gif" href="{{ asset('assets') }}/img/car.gif">
       <title>
         Rental Mobil
       </title>
@@ -21,18 +21,18 @@
       rel="stylesheet"
     />
     <!-- Nucleo Icons -->
-    <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
-    <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="{{ asset('assets') }}/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="{{ asset('assets') }}/css/nucleo-svg.css" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <script
       src="https://kit.fontawesome.com/42d5adcbca.js"
       crossorigin="anonymous"
     ></script>
-    <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="{{ asset('assets') }}/css/nucleo-svg.css" rel="stylesheet" />
     <!-- CSS Files -->
     <link
       id="pagestyle"
-      href="assets/css/soft-ui-dashboard.css?v=1.0.7"
+      href="{{ asset('assets') }}/css/soft-ui-dashboard.css?v=1.0.7"
       rel="stylesheet"
     />
     <!-- Nepcha Analytics (nepcha.com) -->
@@ -61,7 +61,7 @@
           target="_blank"
         >
           <img
-            src="assets/img/car.gif"
+            src="{{ asset('assets') }}/img/car.gif"
             class="navbar-brand-img h-100"
             alt="main_logo"
           />
