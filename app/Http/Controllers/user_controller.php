@@ -26,16 +26,15 @@ class user_controller extends Controller
         // Melakukan validasi data form
         $request->validate([
             'nama' => 'required | string',
-            'email' => 'required | unique',
-            'password' => 'required | integer',
+            'email' => 'required | unique:users,email',
         ]);
 
 
        //Insert data ke table user
        User::create([
-            'nama' => $request->nama,
+            'name' => $request->nama,
             'email' => $request->email,
-            'password' => $request->password,
+            'password' => bcrypt($request->password),
        ]);
 
        return redirect('/user');
@@ -54,12 +53,13 @@ class user_controller extends Controller
         // Melakukan validasi data form
         $validatedData = $request->validate([
             'nama' => 'required | string',
-            'email' => 'required | unique',
-            'password' => 'required | integer',
+            'email' => 'required',
         ]);
 
         //cari user yang akan di update
         $user = User::find($id);
+
+        $validatedData['password']=bcrypt($request->password);
 
         //Update user berdasarkan data validasi
         $user->update($validatedData);

@@ -34,7 +34,7 @@
 
             <div class="form-group mt-3">
                 <label for="password">Password</label>
-                <input type="integer" class="form-control" name="password" value="{{ $user->password }}">
+                <input type="password" class="form-control" name="password">
             </div>
 
             <div class="form-group mt-3 d-flex justify-content-center">

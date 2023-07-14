@@ -18,7 +18,6 @@
                     <th>No</th>
                     <th>Nama</th>
                     <th>Email</th>
-                    <th>Pasword</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
@@ -27,9 +26,8 @@
                 @foreach ($user as $item)
                     <tr>
                         <td>{{ $iteration++ }}</td>
-                        <td>{{ $item['nama'] }}</td>
+                        <td>{{ $item['name'] }}</td>
                         <td>{{ $item['email'] }}</td>
-                        <td>{{ $item['pasword'] }}</td>
                         <td>
                             <a href="/user/edit/{{ $item->id }}" class="btn btn-warning btn-sm">Edit</a>
                             <form action="/user" method="POST" class="d-inline">
