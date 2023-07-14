@@ -60,7 +60,7 @@ Route::put('/bookings/{id}', [BookingController::class, 'update']);
 // Route untuk delete Booking
 Route::delete('/bookings', [BookingController::class, 'destroy']);
 
-
+// Route Autentikasi
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
