@@ -75,7 +75,7 @@
                         <div class="collapse navbar-collapse w-auto" id="sidenav-collapse-main">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="/booking">
+                                    <a class="nav-link active" href="/bookings">
                                         <div class="fa fa-book" style="color: #f28e02"> &nbsp;
                                         </div>
                                         <span class="nav-link-text ms-1">Bookings</span>

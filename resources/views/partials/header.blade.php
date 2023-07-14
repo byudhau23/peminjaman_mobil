@@ -44,14 +44,6 @@ class="main-content position-relative max-height-vh-100 h-100 border-radius-lg"
       <ul class="navbar-nav justify-content-end">
         <li class="nav-item d-flex align-items-center">
           <a
-            class="btn btn-outline-primary btn-sm mb-0 me-3"
-            target="_blank"
-            href="https://www.creative-tim.com/builder?ref=navbar-soft-ui-dashboard"
-            >Online Builder</a
-          >
-        </li>
-        <li class="nav-item d-flex align-items-center">
-          <a
             href="../pages/sign-in.blade.php"
             class="nav-link text-body font-weight-bold px-0"
           >
