@@ -45,3 +45,23 @@ Route::delete('/car', [car_controller::class, 'destroy']);
 
 // Menampilkan Daftar Booking
 Route::get('/bookings', [BookingController::class, 'index']);
+
+// Menampilkan Form Tambah Booking
+Route::get('/bookings/create', [BookingController::class, 'create']);
+
+// Proses Tambah Booking
+Route::post('bookings', [BookingController::class, 'store']);
+
+// Menampilkan Form Edit Booking
+Route::get('/bookings/edit/{id}', [BookingController::class, 'edit']);
+
+// Proses Edit Booking
+Route::put('/bookings/{id}', [BookingController::class, 'update']);
+
+// Route untuk delete Booking
+Route::delete('/bookings', [BookingController::class, 'destroy']);
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
