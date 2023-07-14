@@ -22,32 +22,18 @@
             <div class="form-group mt-3">
                 @csrf
                 <label for="nama">Nama</label>
-                <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama User"
+                <input type="string" class="form-control" name="nama" placeholder="Masukkan Nama User"
                     value="{{ old('nama') }}">
             </div>
 
             <div class="form-group mt-3">
-                <label for="jk">Jenis Kelamin</label>
-                <select class="form-control" name="jk">
-                    <option value="L">Laki-laki</option>
-                    <option value="P">Perempuan</option>
-                </select>
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" value="{{ old('email') }}">
             </div>
 
             <div class="form-group mt-3">
-                <label for="Tgl_lahir">Tanggal Lahir</label>
-                <input type="date" class="form-control" name="Tgl_lahir" value="{{ old('Tgl_lahir') }}">
-            </div>
-
-            <div class="form-group mt-3">
-                <label for="alamat">Alamat</label>
-                <textarea class="form-control" name="alamat">{{ old('alamat') }}</textarea>
-            </div>
-
-            <div class="form-group mt-3">
-                <label for="telp">No. Telp</label>
-                <input type="text" class="form-control" name="telp" placeholder="Masukkan No. Telp"
-                    value="{{ old('telp') }}">
+                <label for="password">Password</label>
+                <input type="integer" class="form-control" name="password" value="{{ old('password') }}">
             </div>
 
             <div class="form-group mt-3 d-flex justify-content-center">

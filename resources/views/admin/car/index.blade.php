@@ -1,9 +1,9 @@
 @extends('main')
 @section('content')
     <div class="container">
-        <h1>Daftar User </h1>
+        <h1>Daftar Mobil</h1>
         <br>
-        <a href="/user/create" class="btn btn-primary">+ Tambah User</a>
+        <a href="/car/create" class="btn btn-primary">+ Tambah Mobil</a>
         <hr>
 
         @if (session('success'))
@@ -16,23 +16,25 @@
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>Nama</th>
-                    <th>Email</th>
-                    <th>Pasword</th>
+                    <th>Brand</th>
+                    <th>Type</th>
+                    <th>Year</th>
+                    <th>Price</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
                 @php $iteration = 1 @endphp
-                @foreach ($user as $item)
+                @foreach ($cars as $item)
                     <tr>
                         <td>{{ $iteration++ }}</td>
-                        <td>{{ $item['nama'] }}</td>
-                        <td>{{ $item['email'] }}</td>
-                        <td>{{ $item['pasword'] }}</td>
+                        <td>{{ $item['brand'] }}</td>
+                        <td>{{ $item['type'] }}</td>
+                        <td>{{ $item['year'] }}</td>
+                        <td>{{ $item['price'] }}</td>
                         <td>
-                            <a href="/user/edit/{{ $item->id }}" class="btn btn-warning btn-sm">Edit</a>
-                            <form action="/user" method="POST" class="d-inline">
+                            <a href="/car/edit/{{ $item->id }}" class="btn btn-warning btn-sm">Edit</a>
+                            <form action="/car" method="POST" class="d-inline">
                                 @csrf
                                 @method('delete')
                                 <input type="hidden" name="id" value="{{ $item->id }}">

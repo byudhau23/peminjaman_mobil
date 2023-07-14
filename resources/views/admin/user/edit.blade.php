@@ -23,32 +23,18 @@
             <div class="form-group mt-3">
                 @csrf
                 <label for="nama">Nama</label>
-                <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama User"
+                <input type="string" class="form-control" name="nama" placeholder="Masukkan Nama User"
                     value="{{ $user->nama }}">
             </div>
 
             <div class="form-group mt-3">
-                <label for="jk">Jenis Kelamin</label>
-                <select class="form-control" name="jk">
-                    <option value="L" {{ $user->jk == 'L' ? 'selected' : '' }}>Laki-laki</option>
-                    <option value="P" {{ $user->jk == 'P' ? 'selected' : '' }}>Perempuan</option>
-                </select>
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" value="{{ $user->email }}">
             </div>
 
             <div class="form-group mt-3">
-                <label for="Tgl_lahir">Tanggal Lahir</label>
-                <input type="date" class="form-control" name="Tgl_lahir" value="{{ $user->Tgl_lahir }}">
-            </div>
-
-            <div class="form-group mt-3">
-                <label for="alamat">Alamat</label>
-                <textarea class="form-control" name="alamat">{{ $user->alamat }}</textarea>
-            </div>
-
-            <div class="form-group mt-3">
-                <label for="telp">No. Telp</label>
-                <input type="text" class="form-control" name="telp" placeholder="Masukkan No. Telp"
-                    value="{{ $user->telp }}">
+                <label for="password">Password</label>
+                <input type="integer" class="form-control" name="password" value="{{ $user->password }}">
             </div>
 
             <div class="form-group mt-3 d-flex justify-content-center">
