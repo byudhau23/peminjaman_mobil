@@ -17,11 +17,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Menampilkan Login
-Route::get('/login', [LoginController::class, 'index'])->name('login');
-
 // Menampilkan Dashboard Admin
-Route::get('/', [dashboard_controller::class, 'index']);
+Route::get('/home', [dashboard_controller::class, 'index']);
 
 // Mobil
 // Menampilkan halaman mobil
@@ -62,5 +59,3 @@ Route::delete('/bookings', [BookingController::class, 'destroy']);
 
 // Route Autentikasi
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
