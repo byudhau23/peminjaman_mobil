@@ -1,9 +1,9 @@
 @extends('main')
 @section('content')
     <div class="container">
-        <h1 class="text-center">Tambah Pasien</h1>
+        <h1 class="text-center">Tambah User</h1>
         <br>
-        <a href="/pasien" class="btn btn-primary">
+        <a href="/user" class="btn btn-primary">
             Back</a>
         <hr>
 
@@ -18,34 +18,22 @@
             </div>
         @endif
 
-        <form action="/pasien" method="post" class="mx-2">
+        <form action="/user" method="post" class="mx-2">
             <div class="form-group mt-3">
                 @csrf
-                <label for="nama">Nama</label>
-                <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama Pasien" value="{{ old('nama') }}">
+                <label for="name">Nama</label>
+                <input type="string" class="form-control" name="name" placeholder="Masukkan Nama User"
+                    value="{{ old('name') }}">
             </div>
 
             <div class="form-group mt-3">
-                <label for="jk">Jenis Kelamin</label>
-                <select class="form-control" name="jk">
-                    <option value="L">Laki-laki</option>
-                    <option value="P">Perempuan</option>
-                </select>
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" value="{{ old('email') }}">
             </div>
 
             <div class="form-group mt-3">
-                <label for="Tgl_lahir">Tanggal Lahir</label>
-                <input type="date" class="form-control" name="Tgl_lahir" value="{{ old('Tgl_lahir') }}">
-            </div>
-
-            <div class="form-group mt-3">
-                <label for="alamat">Alamat</label>
-                <textarea class="form-control" name="alamat">{{ old('alamat') }}</textarea>
-            </div>
-
-            <div class="form-group mt-3">
-                <label for="telp">No. Telp</label>
-                <input type="text" class="form-control" name="telp" placeholder="Masukkan No. Telp" value="{{ old('telp') }}">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password">
             </div>
 
             <div class="form-group mt-3 d-flex justify-content-center">

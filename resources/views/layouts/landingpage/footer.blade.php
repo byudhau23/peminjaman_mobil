@@ -13,7 +13,7 @@
           <div class="copyright-text">
             <p>
               <i class="fa fa-heart" style="color : #FE0000"></i> by
-              <a style="color:black"><b>Anjay Team</b></a>
+              <a style="color: #FE0000"><b>Anjay Team</b></a>
               for a better web
             </p>
           </div>

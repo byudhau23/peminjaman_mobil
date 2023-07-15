@@ -1,9 +1,9 @@
 @extends('main')
 @section('content')
     <div class="container">
-        <h1 class="text-center">Edit Pasien</h1>
+        <h1 class="text-center">Edit User</h1>
         <br>
-        <a href="/pasien" class="btn btn-primary">
+        <a href="/user" class="btn btn-primary">
             Back</a>
         <hr>
 
@@ -18,35 +18,23 @@
             </div>
         @endif
 
-        <form action="/pasien/{{ $pasien->id }}" method="post" class="mx-2">
+        <form action="/user/{{ $user->id }}" method="post" class="mx-2">
             @method('PUT')
             <div class="form-group mt-3">
                 @csrf
-                <label for="nama">Nama</label>
-                <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama Pasien" value="{{ $pasien->nama }}">
+                <label for="name">Nama</label>
+                <input type="string" class="form-control" name="name" placeholder="Masukkan Nama User"
+                    value="{{ $user->nama }}">
             </div>
 
             <div class="form-group mt-3">
-                <label for="jk">Jenis Kelamin</label>
-                <select class="form-control" name="jk">
-                    <option value="L" {{ $pasien->jk == 'L' ? 'selected' : '' }}>Laki-laki</option>
-                    <option value="P" {{ $pasien->jk == 'P' ? 'selected' : '' }}>Perempuan</option>
-                </select>
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" value="{{ $user->email }}">
             </div>
 
             <div class="form-group mt-3">
-                <label for="Tgl_lahir">Tanggal Lahir</label>
-                <input type="date" class="form-control" name="Tgl_lahir" value="{{ $pasien->Tgl_lahir }}">
-            </div>
-
-            <div class="form-group mt-3">
-                <label for="alamat">Alamat</label>
-                <textarea class="form-control" name="alamat">{{ $pasien->alamat }}</textarea>
-            </div>
-
-            <div class="form-group mt-3">
-                <label for="telp">No. Telp</label>
-                <input type="text" class="form-control" name="telp" placeholder="Masukkan No. Telp" value="{{ $pasien->telp }}">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password">
             </div>
 
             <div class="form-group mt-3 d-flex justify-content-center">

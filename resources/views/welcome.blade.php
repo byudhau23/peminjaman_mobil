@@ -57,7 +57,7 @@
           <div class="col-md-3 col-sm-4">
             <div class="blog-post">
               <div class="blog-thumb">
-                <img src="assets/images/owner_1.jpg" alt="">
+                <img src="assets/landingpage/assets/images/owner_1.jpg" alt="">
               </div>
               <div class="down-content">
                 <span>Bimo Yudha Utama</span>
@@ -69,7 +69,7 @@
           <div class="col-md-3 col-sm-4">
             <div class="blog-post">
               <div class="blog-thumb">
-                <img src="assets/images/owner_2.jpeg" alt="">
+                <img src="assets/landingpage/assets/images/owner_2.jpeg" alt="">
               </div>
               <div class="down-content">
                 <span>Syaiful Islam</span>
@@ -81,7 +81,7 @@
           <div class="col-md-3 col-sm-4">
             <div class="blog-post">
               <div class="blog-thumb">
-                <img src="assets/images/owner_3.jpeg" alt="">
+                <img src="assets/landingpage/assets/images/owner_3.jpeg" alt="">
               </div>
               <div class="down-content">
                 <span>Feni Fitriani</span>
@@ -93,7 +93,7 @@
           <div class="col-md-3 col-sm-4">
             <div class="blog-post">
               <div class="blog-thumb">
-                <img src="assets/images/owner_4.jpeg" alt="">
+                <img src="assets/landingpage/assets/images/owner_4.jpeg" alt="">
               </div>
               <div class="down-content">
                 <span>Jidan putra pratama</span>
@@ -115,7 +115,7 @@
           <div class="col-md-4 col-sm-6">
             <div class="blog-post">
               <div class="blog-thumb">
-                <img src="assets/images/BMW 3 Series.jpeg" alt="">
+                <img src="assets/landingpage/assets/images/BMW 3 Series.jpeg" alt="">
               </div>
               <div class="down-content">
                 <strong>from</strong> <span> $40.000</span> <strong>per weekend</strong>
@@ -142,7 +142,7 @@
           <div class="col-md-4 col-sm-6">
             <div class="blog-post">
               <div class="blog-thumb">
-                <img src="assets/images/Ford Mustang.jpeg" alt="">
+                <img src="assets/landingpage/assets/images/Ford Mustang.jpeg" alt="">
               </div>
               <div class="down-content">
                 <strong>from</strong> <span> $27.000</span> <strong>per weekend</strong>
@@ -168,7 +168,7 @@
           <div class="col-md-4 col-sm-6">
             <div class="blog-post">
               <div class="blog-thumb">
-                <img src="assets/images/Honda Civic.jpeg" alt="">
+                <img src="assets/landingpage/assets/images/Honda Civic.jpeg" alt="">
               </div>
               <div class="down-content">
                 <strong>from</strong> <span> $21.000</span> <strong>per weekend</strong>
@@ -196,7 +196,7 @@
           <div class="col-md-4 col-sm-6">
             <div class="blog-post">
               <div class="blog-thumb">
-                <img src="assets/images/Toyota Corolla.jpeg" alt="">
+                <img src="assets/landingpage/assets/images/Toyota Corolla.jpeg" alt="">
               </div>
               <div class="down-content">
                 <strong>from</strong> <span> $19.500</span> <strong>per weekend</strong>
@@ -223,7 +223,7 @@
           <div class="col-md-4 col-sm-6">
             <div class="blog-post">
               <div class="blog-thumb">
-                <img src="assets/images/Mercedes-Benz E-Class.jpeg" alt="">
+                <img src="assets/landingpage/assets/images/Mercedes-Benz E-Class.jpeg" alt="">
               </div>
               <div class="down-content">
                 <strong>from</strong> <span>$54.000</span> <strong>per weekend</strong>
@@ -251,7 +251,7 @@
           <div class="col-md-4 col-sm-6">
             <div class="blog-post">
               <div class="blog-thumb">
-                <img src="assets/images/Tesla Model 3.jpeg" alt="">
+                <img src="assets/landingpage/assets/images/Tesla Model 3.jpeg" alt="">
               </div>
               <div class="down-content">
                 <strong>from</strong> <span> $39.000</span> <strong>per weekend</strong>

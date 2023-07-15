@@ -24,7 +24,7 @@
               <a class="nav-link" href="booking.html">Booking</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
+              <a class="nav-link" href="{{ Route('login') }}">Login</a>
             </li>
           </ul>
         </div>

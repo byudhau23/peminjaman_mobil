@@ -43,10 +43,13 @@ class="main-content position-relative max-height-vh-100 h-100 border-radius-lg"
       </div>
       <ul class="navbar-nav justify-content-end">
         <li class="nav-item d-flex align-items-center">
-          <a
-            href="../pages/sign-in.blade.php"
-            class="nav-link text-body font-weight-bold px-0"
-          >
+          <a href="{{ route('logout') }}"
+          onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();"
+            class="nav-link text-body font-weight-bold px-0">
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+            @csrf
+        </form>
             <i class="fa fa-user me-sm-1"></i>
             <span class="d-sm-inline d-none">Sign Out</span>
           </a>

@@ -3,7 +3,8 @@
 use App\Http\Controllers\car_controller;
 use App\Http\Controllers\dashboard_controller;
 use App\Http\Controllers\BookingController;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\user_controller;
+use illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,10 +19,32 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Menampilkan Dashboard Admin
-Route::get('/home', [dashboard_controller::class, 'index']);
+Route::get('/main', [dashboard_controller::class, 'index'])->middleware('auth');
 
-// Mobil
-// Menampilkan halaman mobil
+// Menampilkan Landingpage
+Route::get('/', function(){
+    return view('welcome');
+});
+
+// Nampilkan halaman user
+Route::get('/user', [user_controller::class, 'index']);
+
+//Nampillin form tambah user
+Route::get('/user/create', [user_controller::class, 'create']);
+
+//Nampillin tambah user
+Route::post('/user', [user_controller::class, 'store']);
+
+//Nampillin form edit user
+Route::get('/user/edit/{id}', [user_controller::class, 'edit']);
+
+//Nampillin edit user
+Route::put('/user/{id}', [user_controller::class, 'update']);
+
+//Nampillin delete user
+Route::delete('/user', [user_controller::class, 'destroy']);
+
+// nampilin halaman mobil
 Route::get('/car', [car_controller::class, 'index']);
 
 // nampilin form tambah mobil
